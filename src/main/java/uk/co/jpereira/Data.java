@@ -207,4 +207,38 @@ public class Data {
                     "\u0095 Completed code writing duties, reviewed daily code for bugs or errors and conducted weekly systems tests\n" +
                     "\u0095 Produced project reports for ongoing working plans and organized work orders"
     };
+    final static String[] cookTest = {
+        "400 Sixth Street, Coralville, IA 52241\n" +
+                "(319) 564-0742\n" +
+                "samuel.gardner@gmail.com\n" +
+                "\n" +
+                "Prep Cook with experience working in Italian and Mexican restaurants and up to 100-seating establishments. Recognized for exceptional ability to prep all kinds of ingredients with precision and efficiency according to recipe specifications. Commended numerous times by head chef and other staff members for organizational and prioritization skills.\n" +
+                "\n" +
+                "PROFESSIONAL EXPERIENCE                                                                             \n" +
+                "VESTA                                                                                                                                     Coralville, IA\n" +
+                "Prep Cook                                                                                                                         Feb 2013 – Present\n" +
+                "\n" +
+                "Prepped food within 100-seat Italian restaurant, with ability to accurately cut ingredients according to specifications 20% faster than other staff, as well as prepare stocks and long cook items\n" +
+                "Trained 15 new prep cooks with no prior experience for outdoor catering service with 500 guests\n" +
+                "Ensured supplies were consistently available, replenishing items as required in aid of cooks, consistently receiving commendation from Head Chef for outstanding organizational skills\n" +
+                "Managed and checked food quality, prioritizing ingredients and reducing food waste by 20%\n" +
+                "Quickly learned any new recipes and food preparation techniques, often training other prep cooks and ensuring utmost quality of work\n" +
+                "CASA AZUL                                                                                                                           Coralville, IA\n" +
+                "Dishwasher                                                                                                                     Jan 2012 – Jan 2013\n" +
+                "\n" +
+                "Ensured 100% clean supplies including cookware, dishes, and utensils in 50-seat restaurant providing breakfast, lunch, and dinner services\n" +
+                "Unloaded food supplies from distributor trucks, and efficiently organized inventory 10% faster than other staff members\n" +
+                "Discovered critical malfunction with dishwashing equipment, allowing restaurant to get it fixed and saving $10K in additional water bill\n" +
+                "Performed routine cleaning procedures across kitchen, assisting restaurant in passing every single Health and Sanitary inspection\n" +
+                "Assisted in food preparation whenever kitchen was short-staffed, commended by head chef for organizational and cleanliness standards, as well as fast-learning cutting techniques\n" +
+                "EDUCATION                                                                                                          \n" +
+                "WEST SENIOR HIGH SCHOOL                                                                                        Coralville, IA\n" +
+                "Diploma\n" +
+                "\n" +
+                "Varsity Volleyball\n" +
+                "ADDITIONAL SKILLS                                                                                         \n" +
+                "\n" +
+                "Food Handler’s Permit\n" +
+                "Skilled in utilizing different kinds of knives, grinders, mixers, etc"
+    };
 }
