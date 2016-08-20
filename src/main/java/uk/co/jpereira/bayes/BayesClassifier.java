@@ -49,15 +49,15 @@ public class BayesClassifier<T, K> extends Classifier<T, K> {
      * category.
      */
     private float categoryProbability(Collection<T> features, K category) {
-        return ((float) this.categoryCount(category)
+        /*return ((float) this.categoryCount(category)
                 / (float) this.getCategoriesTotal())
-                * featuresProbabilityProduct(features, category);
+                * featuresProbabilityProduct(features, category)*/;
         /*return ((float) this.categoryCount(category)
                 / (float) this.getCategoriesTotal())
                 * featuresProbabilityAdd(features, category);*/
-        /*return ((float) this.categoryCount(category)
+        return ((float) this.categoryCount(category)
                 / (float) this.getCategoriesTotal())
-                * (useProd?featuresProbabilityProduct(features,category):featuresProbabilityAdd(features, category));*/
+                * (useProd?featuresProbabilityProduct(features,category):featuresProbabilityAdd(features, category));
     }
 
     /**

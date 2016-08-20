@@ -16,8 +16,10 @@ public class Application {
         String currentLine;
         for(String line: text.split("\\s")) {
             currentLine = line.replaceAll("\\b(up|to|all|with|by|other|a|or|and|then|must|least|i|am|of|but|our|mine|very|worked|decided|each|an|as|at|on|in)\\b", "")
-                    .replaceAll("[^a-zA-Z\\d]", "");
-            textAux.add(currentLine);
+                    .replaceAll("[^a-zA-Z\\d]", "").toLowerCase();
+            //if(currentLine.length() > 1)
+                textAux.add(currentLine);
+
         }
         return textAux;
     }
@@ -29,23 +31,33 @@ public class Application {
              * to the featureset of the context.
              */
         final Classifier<String, String> bayesP =
-                new BayesClassifier<String, String>(true);
+                new BayesClassifier<String, String>(false);
         final Classifier<String, String> bayesA =
                 new BayesClassifier<String, String>(false);
 
 
         for(String features: Data1.administrator_assistant)
             bayesP.learn("administrative assistant", prepareText(features));
+        for(String features: Data2.administrator_assistant)
+            bayesP.learn("administrative assistant", prepareText(features));
         for(String features: Data1.line_cook)
             bayesP.learn("cook", prepareText(features));
+        for(String features: Data2.line_cook)
+            bayesP.learn("cook", prepareText(features));
         for(String features: Data1.sales_manager)
+            bayesP.learn("sales manager", prepareText(features));
+        for(String features: Data2.sales_manager)
             bayesP.learn("sales manager", prepareText(features));
 
         for(String features: Data1.secretary)
             bayesP.learn("secretary", prepareText(features));
+        for(String features: Data2.secretary)
+            bayesP.learn("secretary", prepareText(features));
         for(String features: Data1.software_developer)
             bayesP.learn("software developer", prepareText(features));
-        boolean first = true;
+        for(String features: Data2.software_developer)
+            bayesP.learn("software developer", prepareText(features));
+        boolean first = false;
         for(String features: Data.cook){
             if(first) {
                 first = false;
